@@ -4,20 +4,20 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-    # base case
-    if len(arr) == 0:
-        return
+    for number in arr:
+        if arr.count(number) == 1:
+            return number
 
-    elif len(arr) == 1:
-        return arr[0]
+    # count = {}
+    # for num in arr:
+    #     if num in count:
+    #         del count[num]
+    #     else:
+    #         count[num] = 1
 
-    for i in range(len(arr)):
-        # use count method to count the number of elements
-        if arr.count(arr[i]) == 1:
-            return arr[i]
-
-    return arr[i]
-
+    # for k, v in count.items():
+    #     if v == 1:
+    #         return k
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
