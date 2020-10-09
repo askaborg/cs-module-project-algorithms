@@ -4,9 +4,20 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    for number in arr:
+        if arr.count(number) == 1:
+            return number
 
-    pass
+    # count = {}
+    # for num in arr:
+    #     if num in count:
+    #         del count[num]
+    #     else:
+    #         count[num] = 1
 
+    # for k, v in count.items():
+    #     if v == 1:
+    #         return k
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
